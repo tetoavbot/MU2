@@ -1,0 +1,83 @@
+{
+    "name": "Teto ダ Music",
+    "description": "رائع ان تستعمل احدث اصدار 🤍. ",
+    "logo": "https://telegra.ph/file/d6a3b43ebcf4326351723.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "
+كـود ايبي ايـدي〔 App id 〕لا تغيرهـا
+",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "
+هـاش ايبي ايـدي〔 App Hash 〕لا تغيرهـا
+",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "حط هنا كود المونجو .",
+        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "ضـع اسـم بوتك هنـا",
+        "value": "Teto ダ Music",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايـدي حسـابك و ايـدي المساعـد",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "كـــود تيـــرمكـــس أو كــــود بايروجـــرام قم باستخراجه من بوت الاستخراج ( @cc6x7bot )",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "
+كـــود مفتـــاح هيروكـــو - تروح ع الرابـط » https://dashboard.heroku.com/account ع آخـر خانـه وتنسـخ الكـود لهنـا",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش صغيـرها",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "ضـع هنا ايدي جروبـك",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
